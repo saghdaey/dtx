@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .App-logo {
@@ -7,16 +9,26 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+}
+
+.App-error {
+  color:red;
+
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+h1{
+  font-size:28px;
+}
+
+.capitalize{
+  text-transform: capitalize;
 }
