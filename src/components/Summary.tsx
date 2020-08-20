@@ -29,10 +29,12 @@ const listStyle = css`
 
 type Props = {
   selections: Permutation[];
+  goBack: ()=>void;
 };
 
 export const Summary = ({
     selections,
+    goBack
 }: Props) => {
 
   return (
@@ -52,6 +54,7 @@ export const Summary = ({
         );
       })}
       </ul>
+      <button onClick={goBack}>Edit selections</button>
     </div>
   );
 };

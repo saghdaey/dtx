@@ -90,6 +90,9 @@ const App: React.FC = () => {
   const viewSummary = () => {
     setActivePage('summary');
   };
+  const viewSelectionsPage = () => {
+    setActivePage('chooseSelections');
+  };
 
   const selectedPermutations:Permutation[] = permutations.filter((permutation) => permutation.selected);
   const selectionsEmpty = selectedPermutations.length<1; // create a constant for this seeing using more than once
@@ -121,7 +124,7 @@ const App: React.FC = () => {
               </div>
             </Fragment> : 
             <div>
-              <Summary selections={selectedPermutations}/>
+              <Summary goBack={viewSelectionsPage} selections={selectedPermutations}/>
             </div>
           }
 
